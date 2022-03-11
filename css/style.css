@@ -3,10 +3,14 @@
   margin: 0;
 }
 
-.shadow {
+#hero .shadow {
   background-color: rgba(0, 0, 0, 0, 0.8);
 }
 
 #about {
-    height: 30vh;
+  height: 30vh;
+}
+
+#services {
+  background-color: rgba(0, 0, 0, 0, 0.25);
 }
