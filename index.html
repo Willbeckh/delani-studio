@@ -29,8 +29,10 @@
         height: 100vh;
       }
       #services {
+        height: 100vh;
+      }
+      #services .bg-image {
         background-image: url("./assets/backgrounds/s_image.jpg");
-        height: 40vh;
       }
     </style>
   </head>
@@ -85,9 +87,11 @@
     <!-- about section end -->
 
     <!-- services start -->
-    <div id="services" class="bg-image">
-      <div class="">
-        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+    <div id="services">
+      <div class="bg-image">
+        <div
+          class="container d-flex align-items-center justify-content-center text-center h-100"
+        >
           <div class="text-white p-5 m-5">
             <h2>SERVICES</h2>
             <p class="lh-lg fs-5">
@@ -100,10 +104,56 @@
           </div>
         </div>
       </div>
+
+      <div class="services-products row p-5 m-3">
+        <h4 class="text-center pb-2 text-black">WHAT WE DO</h4>
+        <div class="card bg-black w-25 m-2 col">
+          <div class="card-body text-center">
+            <img
+              src="./assets/services_icons/design_icon.png"
+              class="img-fluid"
+              alt=""
+            />
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card w-25 m-2 col">
+          <div class="card-body text-center">
+            <img
+              src="./assets/services_icons/design_icon.png"
+              class="img-fluid"
+              alt=""
+            />
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-black w-25 m-2 col">
+          <div class="card-body text-center">
+            <img
+              src="./assets/services_icons/design_icon.png"
+              class="img-fluid"
+              alt=""
+            />
+            <div class="card-text">
+              <p class="overlay-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- services end -->
 
-    <!--  -->
+    <!-- -->
 
     <!-- bootstrap js -->
     <script
@@ -111,5 +161,13 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!-- jquery script -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
