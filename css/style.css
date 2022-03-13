@@ -33,5 +33,13 @@
 }
 
 #contact {
-  height: 100vh;
+  height: 85vh;
+}
+
+.icons img {
+  margin: .8rem;
+}
+.icons img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
