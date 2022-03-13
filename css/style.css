@@ -13,23 +13,16 @@
 
 #services {
   background-color: rgba(0, 0, 0, 0, 0.25);
+  height: 100vh;
 }
 
 .card-body {
-  position: relative;
+  cursor: pointer;
 }
 .card-text {
   color: #7c7575;
-  font-size: 1.2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   display: none;
-}
-#services {
-  height: 100vh;
 }
 
 #contact {
@@ -37,9 +30,40 @@
 }
 
 .icons img {
-  margin: .8rem;
+  margin: 0.8rem;
 }
+
 .icons img:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
+
+/* portfolio section */
+.portfolio-card {
+  position: relative;
+  cursor: pointer;
+}
+.project-description {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* opacity: 0; */
+  display: none;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+.about {
+  color: #ffffff;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 10%;
+}
+
+/* portfolio end */
