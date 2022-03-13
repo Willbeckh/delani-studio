@@ -9,17 +9,27 @@ $().ready(function () {
     $(".card-heading1").toggle();
 
     $(".card1-text").toggle();
-
-  });$(".card2").click(() => {
+  });
+  $(".card2").click(() => {
     $(".card-heading2").toggle();
 
     $(".card2-text").toggle();
-  });$(".card3").click(() => {
+  });
+  $(".card3").click(() => {
     $(".card-heading3").toggle();
 
     $(".card3-text").toggle();
   });
 
+  // portfolio hover state
+  $(".portfolio-card").hover(
+    function () {
+      $(".project-description", this).show();
+    },
+    function () {
+      $(".project-description").hide();
+    }
+  );
 
   // button event
   $("button").click(() => {
