@@ -23,16 +23,18 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Delanis studio</title>
+
     <style>
       #hero {
         background-image: url("./assets/backgrounds/h_img.jpg");
         height: 100vh;
       }
-      #services {
-        height: 100vh;
-      }
       #services .bg-image {
         background-image: url("./assets/backgrounds/s_image.jpg");
+      }
+      #contact .bg-image {
+        background-image: url("./assets/backgrounds/c_image.jpg");
+        height: auto;
       }
     </style>
   </head>
@@ -195,6 +197,36 @@
       </div>
     </section>
     <!--portfolio section end -->
+
+    <!-- contact start -->
+    <section id="contact" class="text-light">
+      <div class="bg-image h-75 p-5">
+        <div class="row w-75 mx-auto">
+          <h4 class="text-center mb-5">CONTACT US</h4>
+          <!-- <div class="col"> -->
+          <div
+            class="form-outline form-white col border border-light me-2 rounded"
+          >
+            <input type="text" id="username" class="form-control" />
+            <label class="form-label" for="username">Name..</label>
+          </div>
+          <div class="form-outline form-white col border border-light rounded">
+            <input type="text" id="email" class="form-control" />
+            <label class="form-label" for="email">Email</label>
+          </div>
+          <!-- </div> -->
+            <div class="col-lg-12 form-outline form-white col border border-light mt-3 rounded">
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5">
+            </textarea>
+            <label class="form-label" for="message">Your message here..</label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
 
     <!-- bootstrap js -->
     <script
