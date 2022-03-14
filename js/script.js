@@ -6,25 +6,25 @@ $().ready(function () {
 
   // switch what we do cards-description
   $(".card1").click(() => {
-    $(".card-heading1").toggle();
+    $(".card-heading1").toggle("slow");
 
-    $(".card1-text").toggle();
+    $(".card1-text").toggle("slow");
   });
   $(".card2").click(() => {
-    $(".card-heading2").toggle();
+    $(".card-heading2").toggle("slow");
 
-    $(".card2-text").toggle();
+    $(".card2-text").toggle("slow");
   });
   $(".card3").click(() => {
-    $(".card-heading3").toggle();
+    $(".card-heading3").toggle("slow");
 
-    $(".card3-text").toggle();
+    $(".card3-text").toggle("slow");
   });
 
   // portfolio hover state
   $(".portfolio-card").hover(
     function () {
-      $(".project-description", this).show('swing');
+      $(".project-description", this).show("swing");
     },
     function () {
       $(".project-description").hide();
