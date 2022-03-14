@@ -24,7 +24,7 @@ $().ready(function () {
   // portfolio hover state
   $(".portfolio-card").hover(
     function () {
-      $(".project-description", this).show();
+      $(".project-description", this).show('swing');
     },
     function () {
       $(".project-description").hide();
@@ -32,9 +32,7 @@ $().ready(function () {
   );
 
   // form validation
-  let validateUsername = () => {
-    
-  }
+  let validateUsername = () => {};
 
   // button event
   $("button").click(() => {
