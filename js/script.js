@@ -4,6 +4,7 @@
 $().ready(function () {
   console.log("page loaded.");
 
+<<<<<<< HEAD
   // switch what we do cards-description
   $(".card1").click(() => {
     $(".card-heading1").toggle("slow");
@@ -21,6 +22,8 @@ $().ready(function () {
     $(".card3-text").toggle("slow");
   });
 
+=======
+>>>>>>> ft-form-validation
   // portfolio hover state
   $(".portfolio-card").hover(
     function () {
@@ -31,13 +34,36 @@ $().ready(function () {
     }
   );
 
-  // form validation
-  let validateUsername = () => {};
-
-  // button event
-  $("button").click(() => {
-    let name = $("#username").val();
-    let email = $("#email").val();
-    console.log(name);
-  });
+  cardToggle();
+  validateForm();
 });
+
+// card toggle effect
+let cardToggle = () => {
+  $(".card-body").click(
+    function () {
+      $(".card-heading", this).toggle(400);
+      $(".card-text", this).toggle(400);
+    }
+  );
+};
+
+// form validation
+let validateForm = () => {
+  $("#contactForm").submit(function (submit) {
+    submit.preventDefault();
+    const username = $("#username").val();
+    const email = $("#email").val();
+
+    alertAction();
+
+    return this.reset();
+  });
+};
+
+let alertAction = () => {
+  $(".alert-container").slideDown();
+  setTimeout(() => {
+    $(".alert-container").slideUp();
+  }, 2000);
+};
