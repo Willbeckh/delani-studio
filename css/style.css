@@ -66,3 +66,24 @@
 }
 
 /* portfolio end */
+
+/* alert popup start */
+.alert-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 30%;
+  height: 40px;
+  background-color: rgb(35, 150, 40);
+  border-radius: 4px;
+  z-index: 1;
+  display: none;
+}
+
+.alert-text {
+  text-align: center;
+  padding: 2px;
+  color: #fff;
+}
+/* alert popup end */
