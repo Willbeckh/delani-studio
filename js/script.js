@@ -4,40 +4,46 @@
 $().ready(function () {
   console.log("page loaded.");
 
-  // switch what we do cards-description
-  $(".card1").click(() => {
-    $(".card-heading1").toggle();
-
-    $(".card1-text").toggle();
-  });
-  $(".card2").click(() => {
-    $(".card-heading2").toggle();
-
-    $(".card2-text").toggle();
-  });
-  $(".card3").click(() => {
-    $(".card-heading3").toggle();
-
-    $(".card3-text").toggle();
-  });
-
   // portfolio hover state
   $(".portfolio-card").hover(
     function () {
-      $(".project-description", this).show('swing');
+      $(".project-description", this).show("swing");
     },
     function () {
       $(".project-description").hide();
     }
   );
 
-  // form validation
-  let validateUsername = () => {};
-
-  // button event
-  $("button").click(() => {
-    let name = $("#username").val();
-    let email = $("#email").val();
-    console.log(name);
-  });
+  cardToggle();
+  validateForm();
 });
+
+// card toggle effect
+let cardToggle = () => {
+  $(".card-body").click(
+    function () {
+      $(".card-heading", this).toggle(400);
+      $(".card-text", this).toggle(400);
+    }
+  );
+};
+
+// form validation
+let validateForm = () => {
+  $("#contactForm").submit(function (submit) {
+    submit.preventDefault();
+    const username = $("#username").val();
+    const email = $("#email").val();
+
+    alertAction();
+
+    return this.reset();
+  });
+};
+
+let alertAction = () => {
+  $(".alert-container").slideDown();
+  setTimeout(() => {
+    $(".alert-container").slideUp();
+  }, 2000);
+};
