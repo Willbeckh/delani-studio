@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 // on doc ready
 $().ready(function () {
@@ -31,8 +31,15 @@ $().ready(function () {
     }
   );
 
+  // form validation
+  let validateUsername = () => {
+    
+  }
+
   // button event
   $("button").click(() => {
-    alert("Hello there, your message has been received😃");
+    let name = $("#username").val();
+    let email = $("#email").val();
+    console.log(name);
   });
 });
