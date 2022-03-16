@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  background-color: rgba(124, 124, 124, 0.747);
+}
+
 #hero .shadow {
   background-color: rgba(0, 0, 0, 0, 0.8);
 }
